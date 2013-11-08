@@ -46,7 +46,7 @@
                 <div class="form-group">
                     <label for="title" class="col-lg-2 control-label">Titre</label>
                     <div class="col-lg-8">
-                        <input type="text" class="form-control" name="title" id="title" placeholder="Titre">
+                        <form:input cssClass="form-control" path="title" id="title" placeholder="Titre" />
                     </div>
                 </div>
                 <c:set var="error"><form:errors path="date" cssStyle="color:#B94A48" cssClass="help-block"/></c:set>
@@ -60,7 +60,9 @@
                 <div class="form-group">
                     <label for="tags" class="col-lg-2 control-label">Tags</label>
                     <div class="col-lg-6">
-                        <input type="text" class="form-control" name="tags" id="tags" placeholder="Tags">
+
+                        <form:input cssClass="form-control" type="text" path="tags" name="tags" id="tags" placeholder="Tags"/>
+
                     </div>
                 </div>
                 <div class="form-group">
@@ -69,6 +71,9 @@
                         <textarea class="form-control" name="text" id="text" placeholder="Texte" rows="5"></textarea>
                     </div>
                 </div>
+
+                <form:hidden path="id" />
+
                 <div class="form-group">
                     <div class="col-lg-offset-2 col-lg-10">
                         <button type="submit" class="btn btn-primary">Add</button>
