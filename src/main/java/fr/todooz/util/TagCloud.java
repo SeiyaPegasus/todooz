@@ -37,8 +37,9 @@ public class TagCloud {
         return !(tag == null || "".equals(tag) || contains(tag));
     }
 
-
-    public void top(int i) {
-        tags.subList(0,i-1);
+    public void top(int count) {
+        count = Math.max(count,0);
+        //count = Math.min();
+        tags = tags.subList(0,count);
     }
 }

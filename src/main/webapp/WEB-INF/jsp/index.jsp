@@ -45,6 +45,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Tags</div>
                 <div class="panel-body">
+
                     <a href="/tag/java" style="font-size:14px">java</a>
                     <a href="/tag/java" style="font-size:20px">java</a>
                     <a href="/tag/java" style="font-size:16px">java</a>
